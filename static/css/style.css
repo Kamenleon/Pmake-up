@@ -1,0 +1,57 @@
+body{
+  width: 700px;
+  margin: 20px auto 50px auto;
+}
+
+h1{
+  padding: 8px 0 3px 0;
+  text-align: center;
+  background-color: #b0dbf5;
+  border-radius: 5px;
+}
+
+#ansName{
+  text-align: center;
+  font-size: 25px;
+}
+
+#actImg{
+  text-align: center;
+}
+
+#result{
+  display: inline-block;
+}
+
+#btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns{
+  margin: 0px 10px;
+  padding: 5px 12px;
+}
+
+#twitter{
+  margin: 8px 0 0 0;
+}
+
+.upload{
+  margin: 60px auto;
+}
+
+#topBtn{
+  text-align: center;
+  margin: 50px auto;
+  padding: 3px 8px;
+}
+
+#name{
+  font-weight: bold;
+}
+
+#topImg{
+  margin: 20px 200px 50px 200px;
+}
