@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>パーソナルメイク診断</title>
+</head>
+
+<body>
+  <div class="contents">
+    <h1>パーソナルメイク診断</h1>
+    <p id="ansName">あなたの顔の輪郭は「<span id="name">{{name_kao}}</span>」に<span id="name">{{name_PC}}</span>型です</p>
+    <div id="actImg">
+    </div>
+    <div id="result">
+    </div>
+    <div id="btn">
+      <div class="btns" id="twitter">
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"
+          data-text="診断してみました！" data-hashtags="サマーハッカソン" data-related="" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <form action="/ans" method="post">
+        <input type="submit" value="もう一度あそぶ" class="btns">
+      </form>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
