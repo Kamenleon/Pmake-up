@@ -34,12 +34,16 @@ def predict_PC(image):
     X = X / 255.0
 
     result = model.predict([X])[0]
-    predicted = result.argmax()
+    #predicted = result.argmax()
     #percentage = int(result[predicted] * 100)
     #return classes[predicted],str(percentage)
 
-    return classes[predicted]
-    
+    #return classes[predicted]
+
+    #夏冬春秋に並び変え
+    result2=[result[0],result[3],result[2],result[1]]
+    result3= [int(n*100) for n in result2]
+    return result3[0],result3[1],result3[2],result3[3]  
 
     
 #print('ok')

@@ -42,12 +42,16 @@ def predict_kao(path):
     X = X / 255.0
 
     result = model.predict([X])[0]
-    predicted = result.argmax()
+    #predicted = result.argmax()
     #percentage = int(result[predicted] * 100)
     #return "{0}({1} %)".format(classes[predicted],percentage)
 
     #return classes[predicted],str(percentage)
-    return classes[predicted]
+    #return classes[predicted]
+
+    result2= [int(n*100) for n in result]
+    return result2[0],result2[1],result2[2],result2[3],result2[4]
+
     
     
 
