@@ -11,9 +11,9 @@ from io import BytesIO
 #####  mike=0,siro=1  ######
 
 
-def predict(path):
+def predict_kao(path):
 
-    
+    '''
     #model_path = "./logdir/model_file.hdf5"
     model_path = "./logdir/model_file2.hdf5"
     
@@ -46,11 +46,10 @@ def predict(path):
     #return "{0}({1} %)".format(classes[predicted],percentage)
 
     return classes[predicted],str(percentage)
+    '''
+    return '春'
 
-    #if result[predicted]>0.25:
-    #    return "This is {}".format(classes[predicted])
-    #else:
-    #    return "Cat is not exist"
+    
 
 
 

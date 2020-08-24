@@ -11,8 +11,8 @@ from io import BytesIO
 
 
 
-def predict2(image):
-
+def predict_PC(image):
+    '''
     model_path = "./logdir/model_file3.hdf5"
 
     classes = ['うどん','そば','パスタ','らーめん']
@@ -37,6 +37,8 @@ def predict2(image):
     predicted = result.argmax()
     percentage = int(result[predicted] * 100)
     return classes[predicted],str(percentage)
+    '''
+    return '卵'
 
     
 #print('ok')

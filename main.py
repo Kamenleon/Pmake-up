@@ -6,8 +6,8 @@ import os
 import string
 import random
 
-from predict import predict
-from predict_men import predict2
+from predict_kao import predict_kao
+from predict_PC import predict_PC
 import sys
 import json
 
@@ -50,15 +50,17 @@ def upload():
         print("save", save_path)
         print("ok---------------")
 
-        name,pasent=predict(save_path)
+        name_kao=predict_kao(save_path)
+        name_PC=predict_PC(save_path)
 
         #return redirect('/')
-        return render_template('ans.html',name=name,p=pasent)
+        return render_template('ans.html',name_kao=name_kao,name_PC=name_PC)
     else:
         return render_template('index.html')
 
 
-
+#元ans2
+'''
 @app.route('/upload2', methods=['POST'])
 def upload2():
     if request.files['image']:
@@ -83,6 +85,7 @@ def upload2():
         return render_template('ans2.html',name=name,p=pasent)
     else:
         return render_template('index2.html')
+'''
 
 @app.route('/ans', methods=['POST'])
 def post():
