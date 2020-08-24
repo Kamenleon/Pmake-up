@@ -13,16 +13,17 @@ from io import BytesIO
 
 def predict_kao(path):
 
-    '''
-    #model_path = "./logdir/model_file.hdf5"
-    model_path = "./logdir/model_file2.hdf5"
+    
+    
+    model_path = "./logdir/model_file_kao.hdf5"
     
 
-    classes = ["ムロツヨシ","阿部寛","吉沢亮","吉田沙保里","橋本環奈","広瀬すず","山崎賢人","篠原涼子","石原さとみ","大泉洋","北川景子","木村拓哉"]
+    #classes = ["maru","omonaga","sankaku","sikaku","tamago"]
+    classes = ["丸","面長","逆三角","四角","卵"]
     # load model
     model = load_model(model_path)
 
-    #image_size=100
+    
     image_size=64
 
     X = []
@@ -42,12 +43,13 @@ def predict_kao(path):
 
     result = model.predict([X])[0]
     predicted = result.argmax()
-    percentage = int(result[predicted] * 100)
+    #percentage = int(result[predicted] * 100)
     #return "{0}({1} %)".format(classes[predicted],percentage)
 
-    return classes[predicted],str(percentage)
-    '''
-    return '春'
+    #return classes[predicted],str(percentage)
+    return classes[predicted]
+    
+    
 
     
 
