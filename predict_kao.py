@@ -48,7 +48,9 @@ def predict_kao(path):
 
     #return classes[predicted],str(percentage)
     #return classes[predicted]
-    return result[0],result[1],result[2],result[3],result[4]
+
+    result2= [int(n*100) for n in result]
+    return result2[0],result2[1],result2[2],result2[3],result2[4]
 
     
     
