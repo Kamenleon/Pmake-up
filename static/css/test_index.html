@@ -9,7 +9,18 @@
 
 <body>
   <div class="contents">
-    <h1>パーソナルメイク診断</h1>
+    <header>
+    <p id="subTitle">あなたにあったスタイルを提案します！</p>
+    <p id="mainTitle">Personal make-up</p>
+    </header>
+    <p>画像を入力するだけで<br>あなたにあった髪型・メイクをご提案<br>コーディネートのご参考にどうぞ！</p>
+    <div class="circles">
+      <p  class="spring"></p>
+      <p  class="summer"></p>
+      <p  class="autumn"></p>
+      <p  class="winter"></p>
+    </div>
+    <p>なりたい私を叶えるコーデをみつけよう！</p>
     <div id="btn" class="upload">
       <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="image" accept="image/png,image/jpeg" id="file-sample">
@@ -17,11 +28,7 @@
         <img id="file-preview">
       </form>
     </div>
-    <div id="topBtn">
-      <form action="/re" method="post">
-        <input type="submit" value="ホームに戻る" class="btns">
-      </form>
-    </div>
   </div>
 </body>
+
 </html>
