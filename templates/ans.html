@@ -41,7 +41,7 @@
         var ans = '{{name}}';
 
         //$.getJSON('actData.json', function (data) {
-        $.getJSON("http://localhost:8000/js/actData.json", function (data) {
+        $.getJSON("/js/actData.json", function (data) {
           //↓actDataの配列内を検索
           for (var i = 0; i < Object.keys(data.actData).length; i++) {
             //↓結果と一致するnameの各データを取得し、画面に出力する
@@ -53,7 +53,7 @@
               p.innerHTML = "生年月日：" + data.actData[i].birthday + "<br>血液型：" + data.actData[i].bloodType + "<br>代表作：" + data.actData[i].work + '<br>WikiPedia：<a href="' + data.actData[i].wiki + '">' + data.actData[i].wiki + "</a>";
               parent.appendChild(p);
 
-              document.getElementById("actImg").innerHTML = '<img src = "http://localhost:8000/answer/' + data.actData[i].name + '.jpg" alt="' + data.actData[i].name + '" width="300">';
+              document.getElementById("actImg").innerHTML = '<img src = "/answer/' + data.actData[i].name + '.jpg" alt="' + data.actData[i].name + '" width="300">';
             }
           }
         })
