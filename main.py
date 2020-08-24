@@ -50,11 +50,11 @@ def upload():
         print("save", save_path)
         print("ok---------------")
 
-        name_kao=predict_kao(save_path)
-        name_PC=predict_PC(save_path)
+        pk1,pk2,pk3,pk4,pk5=predict_kao(save_path)
+        pp1,pp2,pp3,pp4=predict_PC(save_path)
 
         #return redirect('/')
-        return render_template('ans.html',name_kao=name_kao,name_PC=name_PC)
+        return render_template('ans.html',pk1=pk1,pk2=pk2,pk3=pk3,pk4=pk4,pk5=pk5,pp1=pp1,pp2=pp2,pp3=pp3,pp4=pp4)
     else:
         return render_template('index.html')
 
