@@ -25,7 +25,7 @@ def random_str(n):
 def index():
     
     #return render_template('index.html', images=os.listdir(SAVE_DIR)[::-1],out=out)
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/images/<path:path>')
 def send_js(path):
@@ -87,10 +87,6 @@ def upload2():
 @app.route('/ans', methods=['POST'])
 def post():
     return render_template('index.html')
-
-@app.route('/ans2', methods=['POST'])
-def post2():
-    return render_template('index2.html')
 
 @app.route('/re', methods=['POST'])
 def post3():
