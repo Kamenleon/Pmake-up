@@ -1,5 +1,5 @@
 
-
+/*
 window.onload = function getActData() {
   //ここで結果を受け取り、任意の変数に代入する
   console.log("OKKKKKKKK");
@@ -19,3 +19,15 @@ window.onload = function getActData() {
     }
   })
 }
+*/
+document.getElementById('file-sample').addEventListener('change', function (e) {
+  // 1枚だけ表示する
+  var file = e.target.files[0];
+
+  // ファイルのブラウザ上でのURLを取得する
+  var blobUrl = window.URL.createObjectURL(file);
+
+  // img要素に表示
+  var img = document.getElementById('file-preview');
+  img.src = blobUrl;
+});
