@@ -12,10 +12,10 @@ from io import BytesIO
 
 
 def predict_PC(image):
-    '''
-    model_path = "./logdir/model_file3.hdf5"
+    
+    model_path = "./logdir/model_file_PC.hdf5"
 
-    classes = ['うどん','そば','パスタ','らーめん']
+    classes = ['夏','秋','春','冬']
     # load model
     model = load_model(model_path)
 
@@ -35,10 +35,11 @@ def predict_PC(image):
 
     result = model.predict([X])[0]
     predicted = result.argmax()
-    percentage = int(result[predicted] * 100)
-    return classes[predicted],str(percentage)
-    '''
-    return '卵'
+    #percentage = int(result[predicted] * 100)
+    #return classes[predicted],str(percentage)
+
+    return classes[predicted]
+    
 
     
 #print('ok')
