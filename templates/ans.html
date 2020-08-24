@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
-  <title>俳優類似度診断</title>
+  <title>パーソナルメイク診断</title>
 </head>
 
 <body>
   <div class="contents">
-    <h1>俳優類似度診断</h1>
+    <h1>パーソナルメイク診断</h1>
     <p id="ansName">あなたは「<span id="name">{{name}}</span>」に<span id="name">{{p}}％</span>似ています</p>
     <div id="actImg">
     </div>
@@ -25,10 +25,6 @@
         <input type="submit" value="もう一度あそぶ" class="btns">
       </form>
 
-
-      <form action="/re" method="post">
-        <input type="submit" value="ホームに戻る" class="btns">
-      </form>
           </div>
   </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
