@@ -13,23 +13,23 @@ from io import BytesIO
 
 def predict_kao(path):
 
-    
-    
+
+
     model_path = "./logdir/model_file_kao.hdf5"
-    
+
 
     #classes = ["maru","omonaga","sankaku","sikaku","tamago"]
     classes = ["丸","面長","逆三角","四角","卵"]
     # load model
     model = load_model(model_path)
 
-    
+
     image_size=64
 
     X = []
-    
+
     image=path
-    
+
     image=Image.open(image)
     #image = Image.open(pil_img)
     image = image.convert("RGB")
@@ -52,16 +52,15 @@ def predict_kao(path):
     result2= [int(n*100) for n in result]
     return result2[0],result2[1],result2[2],result2[3],result2[4]
 
-    
-    
-
-    
 
 
 
 
-   
-    
+
+
+
+
+
 #print('ok')
 #print(predict('./sample_image/yosida.jpg'))
 

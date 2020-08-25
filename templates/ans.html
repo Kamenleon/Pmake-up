@@ -12,7 +12,8 @@
     <h1>パーソナルメイク診断</h1>
     <p id="ansName">あなたの顔の輪郭は「<span id="name">{{pp1}}</span>」に<span id="name">{{pk1}}</span>型です</p>
 
-    <canvas id="myChart"></canvas>
+    <canvas id="pkChart"></canvas>
+    <canvas id="ppChart"></canvas>
 
     <div id="actImg">
     </div>
@@ -34,38 +35,56 @@
   <script type="text/javascript" src="{{ url_for('static', filename='js/actList.js') }}"></script>
 
 
-  
-    
+
+
     <script src ="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script>
       window.onload = function getActData() {
         //ここで結果を受け取り、任意の変数に代入する
-  
+
           var ans = '{{name}}';
-  
+
           //$.getJSON('actData.json', function (data) {
           $.getJSON("/js/actData.json", function (data) {
             //↓actDataの配列内を検索
             for (var i = 0; i < Object.keys(data.actData).length; i++) {
               //↓結果と一致するnameの各データを取得し、画面に出力する
-  
+
               if (ans == data.actData[i].name) {
-  
+
                 var parent = document.getElementById("result");
                 var p = document.createElement("p");
                 p.innerHTML = "生年月日：" + data.actData[i].birthday + "<br>血液型：" + data.actData[i].bloodType + "<br>代表作：" + data.actData[i].work + '<br>WikiPedia：<a href="' + data.actData[i].wiki + '">' + data.actData[i].wiki + "</a>";
                 parent.appendChild(p);
-  
+
                 document.getElementById("actImg").innerHTML = '<img src = "/answer/' + data.actData[i].name + '.jpg" alt="' + data.actData[i].name + '" width="300">';
               }
             }
           })
         }
       </script>
-  
+
+          <script>
+
+            var ctx = document.getElementById('pkChart').getContext('2d');
+            var chart = new Chart(ctx, {
+              type: 'doughnut',
+              data: {
+                labels: ['丸', '面長', '逆三角', '四角','卵'],
+                datasets: [{
+                  backgroundColor: ['rgb(255,99,132)', 'rgb(255,0,132)', 'rgb(0,99,132)', 'rgb(255,99,0)', 'rgb(255,99,25)'],
+                  data: ['{{pk1}}', '{{pk2}}', '{{pk3}}', '{{pk4}}', '{{pk5}}']
+
+                }]
+              },
+              options: {}
+            });
+
+          </script>
+
     <script>
-      
-        var ctx=document.getElementById('myChart').getContext('2d');
+
+        var ctx=document.getElementById('ppChart').getContext('2d');
         var chart = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -73,13 +92,11 @@
           datasets: [{
             backgroundColor:['rgb(255,99,132)','rgb(255,0,132)','rgb(0,99,132)','rgb(255,99,0)'],
             data: ['{{pp1}}','{{pp2}}','{{pp3}}','{{pp4}}']
-        
+
           }]
         },
         options: {}
         });
-
-      
 
     </script>
 </body>
