@@ -10,15 +10,17 @@
 <body>
   <div class="contents">
     <h1>パーソナルメイク診断</h1>
-    <p id="ansName">あなたの顔の輪郭は「<span id="name">{{pname}}</span>」に<span id="name">{{kname}}</span>型です</p>
+    <p id="ansName">あなたの顔の輪郭は「<span id="name">{{kname}}</span>型」です。</p>
+    <p id="ansName">パーソナルカラーは「<span id="name">{{pname}}</span>」です。</p>
 
     <canvas id="pkChart"></canvas>
     <canvas id="ppChart"></canvas>
 
-    <div id="actImg">
+    <div id="pkResult">
     </div>
-    <div id="result">
+    <div id="ppResult">
     </div>
+
     <div id="btn">
       <div class="btns" id="twitter">
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"
@@ -28,19 +30,27 @@
       <form action="/ans" method="post">
         <input type="submit" value="もう一度あそぶ" class="btns">
       </form>
-
-          </div>
+    </div>
   </div>
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/actList.js') }}"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script>
+    window.onload = function getActData() {
+      //ここで結果を受け取り、任意の変数に代入する
 
+      var pkAns = '{{kname}}';
+      var ppAns = '{{pname}}';
 
+      //$.getJSON('actData.json', function (data) {
+      $.getJSON("/js/makeData.json", function (data) {
+        //↓actDataの配列内を検索
+        for (var i = 0; i < Object.keys(data.makeData).length; i++) {
+          //↓結果と一致するnameの各データを取得し、画面に出力する
 
-    <script src ="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script>
-      window.onload = function getActData() {
-        //ここで結果を受け取り、任意の変数に代入する
+          if (pkAns == data.makeData[i].pkName) {
 
           var ans = '{{name}}';
 
