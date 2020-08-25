@@ -1,5 +1,4 @@
 html{
-  background: linear-gradient(#ff9dcb, #fff 20%);
   width : 100%;
   height: 100%;
 }
@@ -8,6 +7,15 @@ body{
   width: 650px;
   margin: 0 auto;
 }
+
+body:after {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  content: "";
+  background: linear-gradient(to bottom,#ff9dcb 0%, #fff 30%);
+  z-index: -1;
+    }
 
 header{
   width: 500px;
