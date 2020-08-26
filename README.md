@@ -15,7 +15,8 @@
 
 ## アプリURL
 https://pmup.herokuapp.com/
-##　サンプル動画URL
+
+## サンプル動画URL
 https://1drv.ms/v/s!Am9ZA7hA1tK4sHiqtvt21g2YfXF4?e=hhtBe9
 
 
