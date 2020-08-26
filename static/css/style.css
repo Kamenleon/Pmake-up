@@ -20,10 +20,15 @@ body:after {
 header{
   width: 500px;
   height: 100px;
-  margin: 15px auto;
+  margin: 35px auto;
   background-color: #ffffff;
   border:solid  2px;
   border-radius: 8px;
+}
+
+#file-preview{
+  max-width: 300px;
+  height: auto;
 }
 
 p{
