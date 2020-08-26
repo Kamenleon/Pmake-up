@@ -8,7 +8,6 @@ from tensorflow.keras.models import load_model
 from io import BytesIO
 
 
-#####  mike=0,siro=1  ######
 
 
 def predict_kao(path):
