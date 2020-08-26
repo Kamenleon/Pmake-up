@@ -44,7 +44,7 @@ def predict_PC(image):
     result2=[result[0],result[3],result[2],result[1]]
 
     result3= [int(n*100) for n in result2]
-    return result3[0],result3[1],result3[2],result3[3],classes[predicted]  
+    return result3[0],result3[1],result3[2],result3[3],classes[predicted],result3.max()  
 
     
 #print('ok')

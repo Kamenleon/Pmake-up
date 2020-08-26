@@ -49,7 +49,7 @@ def predict_kao(path):
     #return classes[predicted]
 
     result2= [int(n*100) for n in result]
-    return result2[0],result2[1],result2[2],result2[3],result2[4],classes[predicted]
+    return result2[0],result2[1],result2[2],result2[3],result2[4],classes[predicted],result2.max()
 
 
 
