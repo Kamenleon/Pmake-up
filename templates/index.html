@@ -23,8 +23,11 @@
     <p id="small">なりたい私を叶えるコーデをみつけよう！</p>
     <div id="btn" class="upload">
       <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file-sample">
+          画像を選択
         <input type="file" name="image" accept="image/png,image/jpeg" id="file-sample">
-        <button type="submit">診断する</button>
+        </label>
+        <button type="submit" id="replayBtn">診断する</button>
       </form>
       <img id="file-preview">
     </div>
