@@ -4,29 +4,43 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ url_for('static',filename='/css/style.css') }}">
-  <title>パーソナルメイク診断</title>
+  <title>PersonalMake診断</title>
 </head>
 
 <body>
   <div class="contents">
-    <h1>パーソナルメイク診断</h1>
+    <header>
+      <p id="subTitle">あなたにあったスタイルを提案します！</p>
+      <p id="mainTitle">Personal make-up</p>
+    </header>
+
     <p id="ansName">あなたの顔の輪郭は「<span id="name">{{kname}}</span>型」です。</p>
     <p id="ansName">パーソナルカラーは「<span id="name">{{pname}}</span>」です。</p>
 
     <canvas id="pkChart"></canvas>
     <canvas id="ppChart"></canvas>
 
+    <div class="circles">
+      <p class="spring"></p>
+      <p class="summer"></p>
+      <p class="autumn"></p>
+      <p class="winter"></p>
+    </div>
+
+    <p>{{kname}}型さんは、</p>
     <div id="pkResult">
     </div>
+    <p>{{pname}}タイプ</p>
     <div id="ppResult">
     </div>
 
-    <div id="btn">
+    <div id="ansBtn">
       <div class="btns" id="twitter">
         <!--<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"
           data-text="診断してみました！%0A私が診断された顔の輪郭は{{kname}}型で、パーソナルカラーは{{pname}}でした!" data-hashtags="サマーハッカソン" data-related="" data-show-count="false">Tweet</a>-->
-          <a href="https://twitter.com/share?url=https%3A%2F%2Fpmup.herokuapp.com%2F&text=%E8%A8%BA%E6%96%AD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81%0A%E7%A7%81%E3%81%8C%E8%A8%BA%E6%96%AD%E3%81%95%E3%82%8C%E3%81%9F%E9%A1%94%E3%81%AE%E8%BC%AA%E9%83%AD%E3%81%AF{{kname}}%E5%9E%8B%E3%81%A7%E3%80%81%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%82%AB%E3%83%A9%E3%83%BC%E3%81%AF{{pname}}%E3%81%A7%E3%81%97%E3%81%9F!&hashtags=%E3%82%B5%E3%83%9E%E3%83%BC%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3" target="_blank" class="twitter-share-button">Tweet</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/share?url=https%3A%2F%2Fpmup.herokuapp.com%2F&text=%E8%A8%BA%E6%96%AD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81%0A%E7%A7%81%E3%81%8C%E8%A8%BA%E6%96%AD%E3%81%95%E3%82%8C%E3%81%9F%E9%A1%94%E3%81%AE%E8%BC%AA%E9%83%AD%E3%81%AF{{kname}}%E5%9E%8B%E3%81%A7%E3%80%81%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%82%AB%E3%83%A9%E3%83%BC%E3%81%AF{{pname}}%E3%81%A7%E3%81%97%E3%81%9F!&hashtags=%E3%82%B5%E3%83%9E%E3%83%BC%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3"
+          target="_blank" class="twitter-share-button">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <form action="/ans" method="post">
         <input type="submit" value="もう一度あそぶ" class="btns">
@@ -86,7 +100,8 @@
 
         }]
       },
-      options: {}
+      options: {
+      }
     });
 
   </script>
