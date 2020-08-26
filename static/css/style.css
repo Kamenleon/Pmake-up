@@ -26,9 +26,14 @@ header{
   border-radius: 8px;
 }
 
+.upload{
+  text-align: center;
+}
+
 #file-preview{
   max-width: 300px;
   height: auto;
+  margin: 40px auto;
 }
 
 p{
