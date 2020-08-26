@@ -40,7 +40,7 @@ def predict_PC(image):
 
     #return classes[predicted]
 
-    #夏冬春秋に並び変え
+    #夏冬春秋に並び変える
     result2=[result[0],result[3],result[2],result[1]]
 
     result3= [int(n*100) for n in result2]

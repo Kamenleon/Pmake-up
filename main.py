@@ -48,7 +48,7 @@ def upload():
         save_path = os.path.join(SAVE_DIR, dt_now + ".png")
         cv2.imwrite(save_path, img)
         print("save", save_path)
-        print("ok---------------")
+        print("ok----------------")
 
         pk1,pk2,pk3,pk4,pk5,kname=predict_kao(save_path)
         pp1,pp2,pp3,pp4,pname=predict_PC(save_path)
