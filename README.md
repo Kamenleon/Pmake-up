@@ -9,9 +9,16 @@
 - Yuuna Yanagida
 
 ## 使用技術
-- フロント　　　HTML,CSS,jquery
+- フロント　　　HTML,CSS,jquery,javascript
 - サーバー　　　python,Flask
 - AI(深層学習)　Tensorfrow+keras
+
+## アプリURL
+https://pmup.herokuapp.com/
+##　サンプル動画URL
+https://1drv.ms/v/s!Am9ZA7hA1tK4sHiqtvt21g2YfXF4?e=hhtBe9
+
+
 
 ## 説明
 サマーハッカソンで初めて組んだメンバーでつくった初めてのアウトプットを同メンバーで改良しました！
