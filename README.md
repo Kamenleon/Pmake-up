@@ -14,6 +14,8 @@
 - AI(深層学習)　Tensorfrow+keras
 
 ## アプリURL
+※初回起動時少し時間がかかります。
+
 https://pmup.herokuapp.com/
 
 ## サンプル動画URL
