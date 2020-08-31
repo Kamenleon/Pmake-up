@@ -31,3 +31,8 @@ document.getElementById('file-sample').addEventListener('change', function (e) {
   var img = document.getElementById('file-preview');
   img.src = blobUrl;
 });
+
+// loading
+$(".btn").click(function () {
+  $("#overlay").fadeIn(500);
+});
