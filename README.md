@@ -1,4 +1,4 @@
-# Pmake-up
+# Personal make-up
 
 ## 概要
 画像認識を用いて入力画像からあなたの顔の輪郭、パーソナルカラーを診断。診断結果からあなたに合うメイクを提案します！
@@ -9,7 +9,7 @@
 - Yuuna Yanagida
 
 ## 使用技術
-- フロント　　　HTML,CSS,jquery,javascript
+- フロント　　　HTML,CSS,JavaScript,jQuery
 - サーバー　　　python,Flask
 - AI(深層学習)　Tensorfrow+keras
 
