@@ -179,6 +179,7 @@ header{
   background-color: #565656;
   font-family: serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #replayBtn:hover{
@@ -197,6 +198,7 @@ label {
   color: #ffffff;
   background-color: #565656;
   font-family: serif;
+  cursor: pointer;
 }
 
 label:hover{
@@ -235,6 +237,7 @@ label:hover{
 .is-hide{
     display:none;
 }
+/* loading end */
 
 .adviceColor{
   display: flex;
