@@ -107,7 +107,7 @@ header{
 }
 
 #small{
-  font-size: 13px;
+  font-size: 15px;
   text-align: center;
   font-family: serif;
   font-weight: bold;
@@ -128,7 +128,7 @@ header{
 }
 
 #ansText{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin: 10px;
   font-family: serif;
@@ -234,4 +234,29 @@ label:hover{
 }
 .is-hide{
     display:none;
+}
+
+.adviceColor{
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 20px;
+}
+
+.color{
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+  border-radius: 50%;
+}
+
+.ans{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#adviceAns{
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
 }

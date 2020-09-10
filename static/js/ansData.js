@@ -1,33 +1,3 @@
-//アドバイスの出力
-window.onload = function getMakeData() {
-
-  //$.getJSON('actData.json', function (data) {
-  $.getJSON("/js/makeData.json", function (data) {
-    //↓actDataの配列内を検索
-    for (var i = 0; i < Object.keys(data.makeData).length; i++) {
-      //↓結果と一致するnameの各データを取得し、画面に出力する
-
-      if (pkAns == data.makeData[i].pkName) {
-
-        var parent = document.getElementById("pkResult");
-        var p = document.createElement("p");
-        p.innerHTML = data.makeData[i].summary;
-        parent.appendChild(p);
-
-      }
-
-      if (ppAns == data.makeData[i].ppName) {
-
-        var parent = document.getElementById("ppResult");
-        var p = document.createElement("p");
-        p.innerHTML = data.makeData[i].summary;
-        parent.appendChild(p);
-
-      }
-    }
-  })
-}
-
 //顔の形のグラフ作成
 var ctx = document.getElementById('pkChart').getContext('2d');
 var chart = new Chart(ctx, {
@@ -58,3 +28,77 @@ var chart = new Chart(ctx, {
   },
   options: {}
 });
+
+//アドバイスの出力
+window.onload = function getMakeData() {
+
+  //$.getJSON('actData.json', function (data) {
+  $.getJSON("/js/makeData.json", function (data) {
+    //↓actDataの配列内を検索
+    for (var i = 0; i < Object.keys(data.makeData).length; i++) {
+      //↓結果と一致するnameの各データを取得し、画面に出力する
+
+      if (pkAns == data.makeData[i].pkName) {
+
+        var parent = document.getElementById("pkResult");
+        var p = document.createElement("p");
+        p.innerHTML = data.makeData[i].summary;
+        parent.appendChild(p);
+
+      }
+
+      if (ppAns == data.makeData[i].ppName) {
+
+        var parent = document.getElementById("ppResult");
+        var p = document.createElement("p");
+        p.innerHTML = data.makeData[i].summary;
+        parent.appendChild(p);
+
+      }
+    }
+  })
+
+  //似合う色の出力
+  switch (ppAns) {
+    case '春':
+      $("#color1").css({ 'background-color': '#e07481' });
+      $("#color2").css({ 'background-color': '#e9923a' });
+      $("#color3").css({ 'background-color': '#f4e158' });
+      $("#color4").css({ 'background-color': '#67b46a' });
+      $("#color5").css({ 'background-color': '#e4745c' });
+      $("#color6").css({ 'background-color': '#ebd262' });
+      $("#color7").css({ 'background-color': '#7c93b3' });
+      $("#color8").css({ 'background-color': '#d6ab64' });
+      break;
+    case '夏':
+      $("#color1").css({ 'background-color': '#34435c' });
+      $("#color2").css({ 'background-color': '#c10f57' });
+      $("#color3").css({ 'background-color': '#109f76' });
+      $("#color4").css({ 'background-color': '#e899bb' });
+      $("#color5").css({ 'background-color': '#f0ebb5' });
+      $("#color6").css({ 'background-color': '#a1cda8' });
+      $("#color7").css({ 'background-color': '#e07481' });
+      $("#color8").css({ 'background-color': '#8b307a' });
+      break;
+    case '秋':
+      $("#color1").css({ 'background-color': '#db7c29' });
+      $("#color2").css({ 'background-color': '#498d37' });
+      $("#color3").css({ 'background-color': '#e8ca2d' });
+      $("#color4").css({ 'background-color': '#c7302b' });
+      $("#color5").css({ 'background-color': '#43a6a0' });
+      $("#color6").css({ 'background-color': '#e2983e' });
+      $("#color7").css({ 'background-color': '#d7674c' });
+      $("#color8").css({ 'background-color': '#c7a564' });
+      break;
+    case '冬':
+      $("#color1").css({ 'background-color': '#1797cf' });
+      $("#color2").css({ 'background-color': '#898989' });
+      $("#color3").css({ 'background-color': '#d31176' });
+      $("#color4").css({ 'background-color': '#118b42' });
+      $("#color5").css({ 'background-color': '#e9e683' });
+      $("#color6").css({ 'background-color': '#dc6991' });
+      $("#color7").css({ 'background-color': '#144493' });
+      $("#color8").css({ 'background-color': '#a61e2c' });
+      break;
+  }
+}
