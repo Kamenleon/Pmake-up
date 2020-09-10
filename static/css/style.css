@@ -417,6 +417,7 @@ header{
 }
 
 #advice{
+  width: 100%;
   margin: 40px auto;
   padding: 10px;
   border: 1px solid #f1f1f1;
