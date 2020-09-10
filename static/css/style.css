@@ -4,6 +4,271 @@ html{
 }
 
 body{
+  width: 100%;
+  margin: 0;
+}
+
+body:after {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  content: "";
+  background: linear-gradient(to bottom,#ff9dcb 0%, #fff 60%);
+  z-index: -1;
+    }
+
+header{
+  height: 130px;
+  background-color: #fdf5f9de;
+  border-bottom: solid 2px #707070;
+}
+
+.upload{
+  text-align: center;
+}
+
+#file-preview{
+  max-width: 300px;
+  height: auto;
+  margin: 10px auto 50px;
+  box-shadow: 2.5px 5px 5px #e9e9e9;
+}
+
+#subTitle{
+  margin: 0;
+  padding-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: serif;
+  text-align: center;
+}
+
+#mainTitle{
+  margin: 0;
+  padding-top: 10px;
+  font-size: 43px;
+  font-family: Monotype Corsiva, serif;
+  text-align: center;
+}
+
+#topText{
+  margin-top: 50px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+}
+
+#br{
+  margin-bottom: 10px;
+}
+
+.circles{
+  display: flex;
+  justify-content: center;
+  margin: 55px auto;
+}
+
+.spring{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  border-radius: 50%;
+  background: #fa17a3;
+}
+
+.summer{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  border-radius: 50%;
+  background-color:#1778ff;
+}
+
+.autumn{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  border-radius: 50%;
+  background-color: #ff8f17;
+}
+
+.winter{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+  border-radius: 50%;
+  background-color: #50ba00;
+}
+
+#small{
+  font-size: 15px;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+}
+
+#ansName{
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#ansBtn{
+  width: 200px;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+}
+
+#ansText{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  font-family: serif;
+  font-weight: bold;
+}
+
+#pkResult{
+  width: 600px;
+  margin: 0 auto;
+  font-family: serif;
+  font-weight: bold;
+  border-top: 1px solid #565656;
+}
+
+#ppResult{
+  width: 600px;
+  margin: 0 auto;
+  font-family: serif;
+  font-weight: bold;
+  border-top: 1px solid #565656;
+}
+
+#advice{
+  margin: 40px auto;
+  padding: 10px;
+  border: 1px solid #f1f1f1;
+  box-shadow: 2.5px 5px 5px #e9e9e9;
+  background-color: #ffffff;
+}
+
+#canvasArea{
+  margin: 80px auto;
+}
+
+#chartText{
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#replayBtn{
+  margin: 20px 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  background-color: #565656;
+  font-family: serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#replayBtn:hover{
+  background-color: #8d8d8d;
+}
+
+label > input{
+  display:none;
+}
+
+label {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  background-color: #565656;
+  font-family: serif;
+  cursor: pointer;
+}
+
+label:hover{
+  background-color: #8d8d8d;
+}
+
+/* loading */
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height:100%;
+    display: none;
+    background: rgba(0,0,0,0.6);
+}
+.cv-spinner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px #ddd solid;
+    border-top: 6px #999 solid;
+    border-radius: 50%;
+    animation: sp-anime 0.6s infinite linear;
+}
+@keyframes sp-anime {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+.is-hide{
+    display:none;
+}
+/* loading end */
+
+.adviceColor{
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 20px;
+}
+
+.color{
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+  border-radius: 50%;
+}
+
+.ans{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#adviceAns{
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 1024px){
+
+html{
+  width : 100%;
+  height: 100%;
+}
+
+body{
   width: 650px;
   margin: 0 auto;
 }
@@ -262,4 +527,6 @@ label:hover{
   width: 100%;
   margin-top: 30px;
   text-align: center;
+}
+
 }
