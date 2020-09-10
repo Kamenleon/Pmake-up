@@ -133,22 +133,23 @@ header{
 }
 
 #pkResult{
-  width: 600px;
   margin: 0 auto;
+  width: 90%;
   font-family: serif;
   font-weight: bold;
   border-top: 1px solid #565656;
 }
 
 #ppResult{
-  width: 600px;
   margin: 0 auto;
+  width: 90%;
   font-family: serif;
   font-weight: bold;
   border-top: 1px solid #565656;
 }
 
 #advice{
+  width: 85%;
   margin: 40px auto;
   padding: 10px;
   border: 1px solid #f1f1f1;
@@ -157,7 +158,7 @@ header{
 }
 
 #canvasArea{
-  margin: 80px auto;
+  margin: 60px auto;
 }
 
 #chartText{
@@ -236,6 +237,8 @@ label:hover{
 /* loading end */
 
 .adviceColor{
+  width: 70%;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   margin: 10px auto 20px;
@@ -244,7 +247,7 @@ label:hover{
 .color{
   width: 30px;
   height: 30px;
-  margin: 0px 10px;
+  margin: 5px 10px;
   border-radius: 50%;
 }
 
