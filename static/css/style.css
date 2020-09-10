@@ -38,16 +38,13 @@ header{
   margin: 0;
   padding-top: 25px;
   font-size: 18px;
-  font-weight: bold;
-  font-family: serif;
   text-align: center;
 }
 
 #mainTitle{
   margin: 0;
   padding-top: 10px;
-  font-size: 43px;
-  font-family: Monotype Corsiva, serif;
+  font-size: 2rem;
   text-align: center;
 }
 
