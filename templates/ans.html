@@ -18,12 +18,12 @@
     <p id="ansName">パーソナルカラーは「<span id="name">{{pname}}</span>」です。</p>
 
     <div id="canvasArea">
-    <canvas id="pkChart"></canvas>
-    <p id="chartText">あなたは{{km}}％で{{kname}}です。</p>
+      <canvas id="pkChart"></canvas>
+      <p id="chartText">あなたは{{km}}％で{{kname}}です。</p>
     </div>
     <div id="canvasArea">
-    <canvas id="ppChart"></canvas>
-    <p id="chartText">あなたは{{pm}}％で{{pname}}です。</p>
+      <canvas id="ppChart"></canvas>
+      <p id="chartText">あなたは{{pm}}％で{{pname}}です。</p>
     </div>
 
     <div class="circles">
@@ -34,14 +34,14 @@
     </div>
 
     <div id="advice">
-    <p id="ansText">{{kname}}型さんは、</p>
-    <div id="pkResult">
-    </div>
+      <p id="ansText">{{kname}}型さんは、</p>
+      <div id="pkResult">
+      </div>
     </div>
     <div id="advice">
-    <p id="ansText">{{pname}}タイプ</p>
-    <div id="ppResult">
-    </div>
+      <p id="ansText">{{pname}}タイプ</p>
+      <div id="ppResult">
+      </div>
     </div>
 
     <div id="ansBtn">
@@ -59,80 +59,22 @@
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='js/actList.js') }}"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script>
-    window.onload = function getMakeData() {
-      //ここで結果を受け取り、任意の変数に代入する
-
-      var pkAns = '{{kname}}';
-      var ppAns = '{{pname}}';
-
-      //$.getJSON('actData.json', function (data) {
-      $.getJSON("/js/makeData.json", function (data) {
-        //↓actDataの配列内を検索
-        for (var i = 0; i < Object.keys(data.makeData).length; i++) {
-          //↓結果と一致するnameの各データを取得し、画面に出力する
-
-          if (pkAns == data.makeData[i].pkName) {
-
-            var parent = document.getElementById("pkResult");
-            var p = document.createElement("p");
-            p.innerHTML = data.makeData[i].summary;
-            parent.appendChild(p);
-
-          }
-
-          if (ppAns == data.makeData[i].ppName) {
-
-            var parent = document.getElementById("ppResult");
-            var p = document.createElement("p");
-            p.innerHTML = data.makeData[i].summary;
-            parent.appendChild(p);
-
-          }
-        }
-      })
-    }
+    //ここで結果を受け取り、任意の変数に代入する
+    var pkAns = '{{kname}}';
+    var ppAns = '{{pname}}';
+    var pk1 = '{{pk1}}';
+    var pk2 = '{{pk2}}';
+    var pk3 = '{{pk3}}';
+    var pk4 = '{{pk4}}';
+    var pk5 = '{{pk5}}';
+    var pp1 = '{{pp1}}';
+    var pp2 = '{{pp2}}';
+    var pp3 = '{{pp3}}';
+    var pp4 = '{{pp4}}';
   </script>
-
-  <script>
-
-    var ctx = document.getElementById('pkChart').getContext('2d');
-    var chart = new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        labels: ['丸', '面長', '逆三角', '四角', '卵'],
-        datasets: [{
-          backgroundColor: ['rgb(241,158,194)', 'rgb(255,231,63)', 'rgb(246,173,60)', 'rgb(135,202,178)', 'rgb(64,124,192)'],
-          data: ['{{pk1}}', '{{pk2}}', '{{pk3}}', '{{pk4}}', '{{pk5}}']
-
-        }]
-      },
-      options: {
-      }
-    });
-
-  </script>
-
-  <script>
-
-    var ctx = document.getElementById('ppChart').getContext('2d');
-    var chart = new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-        labels: ['夏', '冬', '春', '秋'],
-        datasets: [{
-          backgroundColor: ['rgb(23,120,255)', 'rgb(80,186,0)', 'rgb(255,105,180)', 'rgb(255,143,23)'],
-          data: ['{{pp1}}', '{{pp2}}', '{{pp3}}', '{{pp4}}']
-
-        }]
-      },
-      options: {}
-    });
-
-  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/ansData.js') }}"></script>
 </body>
 
 </html>
