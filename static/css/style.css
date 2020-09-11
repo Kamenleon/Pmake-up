@@ -337,6 +337,12 @@ header{
   margin: 0px 10px;
   border-radius: 50%;
   background: #fa17a3;
+  transition: .5s ;
+  transform: rotateY( 0deg ) ;
+}
+
+.circles:hover .spring:hover{
+  transform: rotateY( 360deg ) ;
 }
 
 .summer{
@@ -345,6 +351,12 @@ header{
   margin: 0px 10px;
   border-radius: 50%;
   background-color:#1778ff;
+  transition: .5s ;
+  transform: rotateY( 0deg ) ;
+}
+
+.circles:hover .summer:hover{
+  transform: rotateY( 360deg ) ;
 }
 
 .autumn{
@@ -353,6 +365,12 @@ header{
   margin: 0px 10px;
   border-radius: 50%;
   background-color: #ff8f17;
+  transition: .5s ;
+  transform: rotateY( 0deg ) ;
+}
+
+.circles:hover .autumn:hover{
+  transform: rotateY( 360deg ) ;
 }
 
 .winter{
@@ -361,6 +379,12 @@ header{
   margin: 0px 10px;
   border-radius: 50%;
   background-color: #50ba00;
+  transition: .5s ;
+  transform: rotateY( 0deg ) ;
+}
+
+.circles:hover .winter:hover{
+  transform: rotateY( 360deg ) ;
 }
 
 #small{
