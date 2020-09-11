@@ -19,9 +19,9 @@ body:after {
     }
 
 header{
-  height: 130px;
   background-color: #fdf5f9de;
   border-bottom: solid 2px #707070;
+  margin-bottom: 3rem;
 }
 
 .upload{
@@ -44,9 +44,10 @@ header{
 
 #mainTitle{
   margin: 0;
-  padding-top: 1rem;
+  padding: 1rem 0 2rem;
   font-size: 2rem;
   text-align: center;
+  font-weight: bold;
 }
 
 #topText{
@@ -106,65 +107,61 @@ header{
 
 #ansName{
   text-align: center;
-  font-family: serif;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
 }
 
 #ansBtn{
-  width: 200px;
-  margin: 70px auto;
+  width: fit-content;
+  margin: 2rem auto;
   display: flex;
   align-items: center;
 }
 
 #ansText{
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px;
-  font-family: serif;
-  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.7rem;
   text-align: center;
 }
 
 #pkResult{
   margin: 0 auto;
   width: 90%;
-  font-family: serif;
-  font-weight: bold;
   border-top: 1px solid #565656;
 }
 
 #ppResult{
   margin: 0 auto;
   width: 90%;
-  font-family: serif;
-  font-weight: bold;
   border-top: 1px solid #565656;
 }
 
 #advice{
   width: 85%;
-  margin: 40px auto;
-  padding: 10px;
+  margin: 1.5rem auto;
+  padding: 0.5rem;
   border: 1px solid #f1f1f1;
   box-shadow: 2.5px 5px 5px #e9e9e9;
   background-color: #ffffff;
 }
 
+.summary{
+  display: inline-block;
+  margin: 0.9rem 0.3rem 0.5rem;
+}
+
 #canvasArea{
-  margin: 60px auto;
+  margin: 3rem auto;
 }
 
 #chartText{
   text-align: center;
-  font-family: serif;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 #replayBtn{
-  margin: 1.5rem 0 1.5rem 2rem;
+  margin: 1.5rem 0 1.5rem 1.5rem;
   padding: 10px 25px;
   border: none;
   border-radius: 40px;
@@ -243,7 +240,7 @@ label:hover{
 }
 
 .ans{
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -311,6 +308,7 @@ header{
   font-size: 2.8rem;
   font-family: Monotype Corsiva, serif;
   text-align: center;
+  font-weight: unset;
 }
 
 #topText{
