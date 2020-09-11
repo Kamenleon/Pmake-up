@@ -1,3 +1,4 @@
+/* スマホ版デザインここから */
 html{
   width : 100%;
   height: 100%;
@@ -36,36 +37,34 @@ header{
 
 #subTitle{
   margin: 0;
-  padding-top: 25px;
-  font-size: 18px;
+  padding-top: 2.2rem;
+  font-size: 1.05rem;
   text-align: center;
 }
 
 #mainTitle{
   margin: 0;
-  padding-top: 10px;
+  padding-top: 1rem;
   font-size: 2rem;
   text-align: center;
 }
 
 #topText{
-  margin-top: 50px;
-  font-size: 20px;
+  margin-top: 3rem;
+  font-size: 1.15rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: serif;
-  font-weight: bold;
 }
 
 #br{
-  margin-bottom: 10px;
+  margin-bottom: 0.7rem;
 }
 
 .circles{
   display: flex;
   justify-content: center;
-  margin: 55px auto;
+  margin: 3rem auto;
 }
 
 .spring{
@@ -101,10 +100,8 @@ header{
 }
 
 #small{
-  font-size: 15px;
+  font-size: 0.95rem;
   text-align: center;
-  font-family: serif;
-  font-weight: bold;
 }
 
 #ansName{
@@ -167,7 +164,7 @@ header{
 }
 
 #replayBtn{
-  margin: 20px 20px;
+  margin: 1.5rem 0 1.5rem 2rem;
   padding: 10px 25px;
   border: none;
   border-radius: 40px;
@@ -176,10 +173,6 @@ header{
   font-family: serif;
   font-weight: bold;
   cursor: pointer;
-}
-
-#replayBtn:hover{
-  background-color: #8d8d8d;
 }
 
 label > input{
@@ -261,7 +254,7 @@ label:hover{
   text-align: center;
 }
 
-
+/* PC版デザインここから */
 @media screen and (min-width: 1300px){
 
 html{
