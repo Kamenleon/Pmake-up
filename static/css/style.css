@@ -21,7 +21,7 @@ body:after {
 header{
   background-color: #fdf5f9de;
   border-bottom: solid 2px #707070;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .upload{
@@ -108,7 +108,7 @@ header{
 #ansName{
   text-align: center;
   font-size: 1.1rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 #ansBtn{
@@ -151,13 +151,7 @@ header{
 }
 
 #canvasArea{
-  margin: 3rem auto;
-}
-
-#chartText{
-  text-align: center;
-  font-size: 1rem;
-  margin-top: 1rem;
+  margin: 1rem auto 3.5rem;
 }
 
 #replayBtn{
@@ -400,7 +394,7 @@ header{
   font-family: serif;
   font-weight: bold;
   font-size: 1.3rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 #ansBtn{
@@ -444,15 +438,7 @@ header{
 }
 
 #canvasArea{
-  margin: 6rem auto;
-}
-
-#chartText{
-  text-align: center;
-  font-family: serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-top: 2rem;
+  margin: 1.5rem auto 6rem;
 }
 
 #replayBtn{
