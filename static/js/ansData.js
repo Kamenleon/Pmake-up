@@ -29,6 +29,9 @@ var chart = new Chart(ctx, {
   options: {}
 });
 
+//#canvasAreaにCSS追加
+$("#canvasArea").css({ 'display': 'inline-block' });
+
 //アドバイスの出力
 window.onload = function getMakeData() {
 

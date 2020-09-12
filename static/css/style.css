@@ -270,9 +270,9 @@ body:after {
     }
 
 header{
-  width: 460px;
-  height: 110px;
-  margin: 45px auto;
+  width: 30rem;
+  height: 7rem;
+  margin: 3rem auto 0;
   background-color: #fdf5f9de;
   border:solid  2px #707070;
   border-radius: 8px;
@@ -391,16 +391,24 @@ header{
   margin: 1.5rem auto;
 }
 
+.PmakeResult{
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  margin: 4rem auto 0;
+}
+
 #ansName{
   text-align: center;
   font-family: serif;
   font-weight: bold;
-  font-size: 1.3rem;
-  margin-top: 3rem;
+  font-size: 1.4rem;
+  margin: 1.2rem auto 0;
 }
 
 #ansBtn{
-  width: 230px;
+  width: fit-content;
   margin: 70px auto;
   display: flex;
   align-items: center;
@@ -440,7 +448,7 @@ header{
 }
 
 #canvasArea{
-  margin: 1.5rem auto 6rem;
+  margin: 4rem auto 2rem;
 }
 
 #replayBtn{
