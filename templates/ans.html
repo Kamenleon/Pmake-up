@@ -56,13 +56,18 @@
     </div>
 
     <div id="ansBtn">
-      <div class="btns" id="twitter">
+      <div class="btn">
         <!--<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"
           data-text="診断してみました！%0A私が診断された顔の輪郭は{{kname}}型で、パーソナルカラーは{{pname}}でした!" data-hashtags="サマーハッカソン" data-related="" data-show-count="false">Tweet</a>-->
         <a href="https://twitter.com/share?url=https%3A%2F%2Fpmup.herokuapp.com%2F&text=%E8%A8%BA%E6%96%AD%E3%81%97%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81%0A%E8%A8%BA%E6%96%AD%E3%81%95%E3%82%8C%E3%81%9F%E9%A1%94%E3%81%AE%E8%BC%AA%E9%83%AD%E3%81%AF{{kname}}%E3%81%A7%E3%80%81%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%AB%E3%82%AB%E3%83%A9%E3%83%BC%E3%81%AF{{pname}}%E3%81%A7%E3%81%97%E3%81%9F!%20&hashtags=%E6%8A%80%E8%82%B2%E5%B1%95"
           target="_blank" class="twitter-share-button">Tweet</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
+        <div class="line-it-button" data-lang="ja" data-type="share-a" data-ver="3"
+          data-url="https://pmup.herokuapp.com/" data-color="default" data-size="small" data-count="false"
+          style="display: none;"></div>
+        <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async"
+          defer="defer"></script>
       <form action="/ans" method="post">
         <input type="submit" value="もう一度診断する" id="replayBtn">
       </form>

@@ -124,6 +124,10 @@ header{
   align-items: center;
 }
 
+.btn{
+  margin-right: 0.5rem;
+}
+
 #ansText{
   font-size: 1rem;
   margin: 0.7rem;
@@ -162,8 +166,20 @@ header{
   margin: 1.5rem auto 2rem;
 }
 
-#replayBtn{
+#submitBtn{
   margin: 1.5rem 0 1.5rem 1.5rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  background-color: #565656;
+  font-family: serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#replayBtn{
+  margin: 0 0 0 0.5rem;
   padding: 10px 25px;
   border: none;
   border-radius: 40px;
@@ -457,8 +473,8 @@ header{
   margin: 4rem auto 2rem;
 }
 
-#replayBtn{
-  margin: 0 50px;
+#submitBtn{
+  margin: 1rem 3.5rem 1.5rem 1rem;
   padding: 10px 25px;
   border: none;
   border-radius: 40px;
@@ -467,6 +483,22 @@ header{
   font-family: serif;
   font-weight: bold;
   cursor: pointer;
+}
+
+#replayBtn{
+  margin: 0 0 0 2rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  background-color: #565656;
+  font-family: serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn{
+  margin-right: 1rem;
 }
 
 #replayBtn:hover{
