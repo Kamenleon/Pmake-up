@@ -128,12 +128,14 @@ header{
   margin: 0 auto;
   width: 90%;
   border-top: 1px solid #565656;
+  line-height: 1.3rem;
 }
 
 #ppResult{
   margin: 0 auto;
   width: 90%;
   border-top: 1px solid #565656;
+  line-height: 1.3rem;
 }
 
 #advice{
