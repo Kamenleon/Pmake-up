@@ -3,10 +3,10 @@ var ctx = document.getElementById('pkChart').getContext('2d');
 var chart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ['丸', '面長', '逆三角', '四角', '卵'],
+    labels: ['丸(' + pk1 + '%)', '面長(' + pk2 + '%)', '逆三角(' + pk3 + '%)', '四角(' + pk4 + '%)', '卵(' + pk5 + '%)'],
     datasets: [{
       backgroundColor: ['rgb(241,158,194)', 'rgb(255,231,63)', 'rgb(246,173,60)', 'rgb(135,202,178)', 'rgb(64,124,192)'],
-      data: [pk1, pk2, pk3, pk4, pk5]
+      data: [pk1, pk2, pk3, pk4, pk5],
 
     }]
   },
@@ -19,7 +19,7 @@ var ctx = document.getElementById('ppChart').getContext('2d');
 var chart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ['夏', '冬', '春', '秋'],
+    labels: ['夏(' + pp1 + '%)', '冬(' + pp2 + '%)', '春(' + pp3 + '%)', '秋(' + pp4 + '%)'],
     datasets: [{
       backgroundColor: ['rgb(23,120,255)', 'rgb(80,186,0)', 'rgb(255,105,180)', 'rgb(255,143,23)'],
       data: [pp1, pp2, pp3, pp4]
