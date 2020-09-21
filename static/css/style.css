@@ -781,7 +781,7 @@ header{
   margin-right: 1rem;
 }
 
-#replayBtn:hover{
+#replayBtn:hover,#submitBtn:hover{
   background-color: #8d8d8d;
 }
 
