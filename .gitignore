@@ -223,3 +223,10 @@ dmypy.json
 *.scss.map
 
 # End of https://www.toptal.com/developers/gitignore/api/flask,git,sass,python
+
+# SCSS
+general.min.css
+phone.min.css
+desktop.min.css
+component.min.css
+reset.min.css
