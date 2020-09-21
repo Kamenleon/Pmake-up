@@ -3,35 +3,34 @@
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/reset.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/style.min.css') }}">
   <title>PersonalMake診断</title>
 </head>
 
 <body>
-          <div id="overlay">
-            <div class="cv-spinner">
-              <span class="spinner"></span>
-            </div>
-          </div>
+  <div id="overlay">
+    <div class="cv-spinner">
+      <span class="spinner"></span>
+    </div>
+  </div>
   <div class="contents">
     <header>
-    <p id="subTitle">あなたにあったスタイルを提案します！</p>
-    <p id="mainTitle">Personal make-up</p>
+      <p id="subTitle">あなたにあったスタイルを提案します！</p>
+      <p id="mainTitle">Personal make-up</p>
     </header>
     <p id="topText"><span id="br">画像を入力するだけで</span><span id="br">あなたにあった髪型・メイクをご提案</span>コーディネートのご参考にどうぞ！</p>
     <div class="circles">
-      <p class="spring"></p>
-      <p class="summer"></p>
-      <p class="autumn"></p>
-      <p class="winter"></p>
+      <span class="spring"></span>
+      <span class="summer"></span>
+      <span class="autumn"></span>
+      <span class="winter"></span>
     </div>
     <p id="small">なりたい私を叶えるコーデをみつけよう！</p>
     <div id="btn" class="upload">
       <form action="/upload" method="post" enctype="multipart/form-data">
         <label for="file-sample">
           顔写真を選択
-        <input type="file" name="image" accept="image/png,image/jpeg" id="file-sample">
+          <input type="file" name="image" accept="image/png,image/jpeg" id="file-sample">
         </label>
         <button type="submit" id="submitBtn" class="btn">診断する</button>
       </form>
