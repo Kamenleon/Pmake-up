@@ -1,16 +1,3 @@
-$(function () {
-  //submitを拾う
-  $("#form").on("submit", function () {
-    //0.1秒後にsubmitを実行
-    setTimeout(function () {
-      $("#form").off("submit");
-      $("#form").submit();
-    }, 100);
-    //submitをキャンセル
-    return false;
-  });
-});
-
 //顔の形のグラフ作成
 var ctx = document.getElementById('pkChart').getContext('2d');
 var chart = new Chart(ctx, {
