@@ -11,8 +11,17 @@ document.getElementById('file-sample').addEventListener('change', function (e) {
   img.src = blobUrl;
 });
 
-
 // loading機能
 $(".btn").click(function () {
-  $("#overlay").fadeIn(500);
+  //submitを拾う
+  $("form").submit(function () {
+    //0.1秒後にsubmitを実行
+    setTimeout(function () {
+      $("form").off("submit");
+      $("form").submit();
+    }, 100);
+    $("#overlay").fadeIn(500);
+    //submitをキャンセル
+    return false;
+  });
 });
