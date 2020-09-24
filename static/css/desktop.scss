@@ -184,7 +184,15 @@
     font-size: 1rem;
   }
 
-  #ppResult {
+  #ppResult{
+    margin: 0 auto;
+    font-family: serif;
+    font-weight: bold;
+    border-top: 1px solid #565656;
+    font-size: 1rem;
+  }
+
+  #fashionResult{
     margin: 0 auto;
     font-family: serif;
     font-weight: bold;

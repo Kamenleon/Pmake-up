@@ -52,10 +52,15 @@ window.onload = function getMakeData() {
 
       if (ppAns == data.makeData[i].ppName) {
 
-        var parent = document.getElementById("ppResult");
-        var p = document.createElement("p");
-        p.innerHTML = data.makeData[i].summary;
-        parent.appendChild(p);
+        var parent1 = document.getElementById("ppResult");
+        var p1 = document.createElement("p");
+        p1.innerHTML = data.makeData[i].summary;
+        parent1.appendChild(p1);
+
+        var parent2 = document.getElementById("fashionResult");
+        var p2 = document.createElement("p");
+        p2.innerHTML = data.makeData[i].fashion;
+        parent2.appendChild(p2);
 
       }
     }
