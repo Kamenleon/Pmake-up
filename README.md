@@ -9,7 +9,7 @@
 - Yuuna Yanagida
 
 ## 使用技術
-- フロント　　　HTML,CSS,JavaScript,jQuery
+- フロント　　　HTML,CSS,Sass(SCSS),JavaScript,jQuery,chart.js
 - サーバー　　　python,Flask
 - AI(深層学習)　Tensorfrow+keras
 
