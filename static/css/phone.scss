@@ -1,11 +1,6 @@
 /* スマホ版デザインここから */
 /* 横幅が狭いスマホ用 */
 
-html {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   width: 100%;
   margin: 0 auto;
@@ -28,10 +23,6 @@ header {
   background-color: #fdf5f9de;
   border-radius: 20px;
   border: solid  2px #707070;
-}
-
-.upload {
-  text-align: center;
 }
 
 #file-preview {
