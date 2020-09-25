@@ -25,6 +25,28 @@ header {
   border: solid  2px #707070;
 }
 
+  #infoTitle{
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0 0.4rem;
+  }
+
+  #infoSummary{
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 90%;
+    border-top: 1px solid #565656;
+    line-height: 1.6rem;
+    font-size: 0.8rem;
+  }
+
+  #infoSmall{
+    text-align: center;
+    margin: 1.5rem 0 2rem;
+    font-size: 0.8rem;
+  }
+
+
 #file-preview {
   max-width: 250px;
   height: auto;
@@ -139,13 +161,17 @@ header {
   font-size: 0.9rem;
 }
 
-#advice {
+#advice, .info{
   width: 85%;
   margin: 1.5rem auto;
   padding: 0.5rem;
   border: 1px solid #f1f1f1;
   box-shadow: 2.5px 5px 5px #e9e9e9;
   background-color: #ffffff;
+}
+
+.info{
+    margin: 1.5rem auto 5rem;
 }
 
 .summary {
