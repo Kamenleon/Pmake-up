@@ -193,6 +193,23 @@ header {
   font-size: 0.8rem;
 }
 
+
+#linkBtn {
+  display: block;
+  margin: 0 auto 3rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  background-color: #565656;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+a{
+  text-decoration: none;
+}
+
 #replayBtn {
   margin: 0 0 0 0.5rem;
   padding: 8px 10px;
