@@ -26,6 +26,38 @@
     border-radius: 8px;
   }
 
+  .info{
+    width: 36rem;
+    margin: 0 auto 6rem;
+    background-color: #ffffff;
+    border: 1px solid #f1f1f1;
+    box-shadow: 2.5px 5px 5px #e9e9e9;
+  }
+
+  #infoTitle{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.8rem 0 0;
+    font-family: serif;
+    font-weight: bold;
+  }
+
+  #infoSummary{
+    margin: 1rem 2rem 1rem;
+    padding: 1rem 0.5rem 0;
+    border-top: 1px solid #565656;
+    font-family: serif;
+    font-weight: bold;
+    line-height: 1.8rem;
+  }
+
+  #infoSmall{
+    text-align: center;
+    font-family: serif;
+    font-weight: bold;
+    margin: 2.5rem 0;
+  }
+
   #file-preview {
     max-width: 300px;
     height: auto;
