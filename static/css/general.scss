@@ -26,6 +26,27 @@
     border: solid  2px #707070;
   }
 
+  #infoTitle{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 0 0.4rem;
+  }
+
+  #infoSummary{
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 90%;
+    border-top: 1px solid #565656;
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+  }
+
+  #infoSmall{
+    text-align: center;
+    margin: 1.5rem 0 2rem;
+    font-size: 0.9rem;
+  }
+
   #file-preview {
     max-width: 300px;
     height: auto;
@@ -126,7 +147,7 @@
     margin-right: 0.5rem;
   }
 
-  #ansText {
+  #ansText{
     font-size: 1rem;
     margin: 0.7rem;
     text-align: center;
@@ -139,7 +160,7 @@
     line-height: 1.3rem;
   }
 
-  #advice {
+  #advice, .info{
     width: 88%;
     max-width: 600px;
     margin: 1.5rem auto;
