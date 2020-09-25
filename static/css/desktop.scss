@@ -191,7 +191,7 @@
 
   #ansBtn {
     width: fit-content;
-    margin: 70px auto;
+    margin: 2rem auto 1rem;
     display: flex;
     align-items: center;
   }
@@ -276,7 +276,8 @@
   }
 
   #replayBtn {
-    margin: 0 0 0 2rem;
+    display: block;
+    margin: 0 auto;
     padding: 10px 25px;
     border: none;
     border-radius: 40px;
