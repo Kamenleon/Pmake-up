@@ -25,3 +25,9 @@ $(".btn").click(function () {
     return false;
   });
 });
+
+  $(document).ready(function() {
+    setTimeout(function () {
+      $("#overlay").css({ "position": "fixed" });
+    }, 10);
+});
