@@ -110,3 +110,10 @@ window.onload = function getMakeData() {
       break;
   }
 }
+
+function LinkClick() {
+  var f = document.forms["form1"];
+  f.method = "POST";
+  f.submit();
+  return true;
+}
