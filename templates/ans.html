@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:title" content="診断結果">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="パーソナルカラーと顔の輪郭の2つの診断結果からあなたに似合うメイクや髪型を提案します！">
+  <meta property="og:url" content="https://pmup.herokuapp.com/">
+  <meta property="og:site_name" content="Personal make up 診断">
+  <meta property="og:image" content="https://pmup.herokuapp.com/images/thumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="{{ url_for('static',filename='/css/style.min.css') }}">
   <title>PersonalMake診断</title>
@@ -12,8 +19,8 @@
   <div class="contents">
     <header>
       <a href="#" onclick="LinkClick()">
-      <p id="subTitle">あなたにあったスタイルを提案します！</p>
-      <p id="mainTitle">Personal make-up</p>
+        <p id="subTitle">あなたにあったスタイルを提案します！</p>
+        <p id="mainTitle">Personal make-up</p>
       </a>
     </header>
 

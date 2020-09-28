@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:title" content="Personal make up 診断">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="パーソナルカラーと顔の輪郭の2つの診断結果からあなたに似合うメイクや髪型を提案します！">
+  <meta property="og:url" content="https://pmup.herokuapp.com/">
+  <meta property="og:site_name" content="Personal make up 診断">
+  <meta property="og:image" content="https://pmup.herokuapp.com/images/thumbnail.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/style.min.css') }}">
   <title>PersonalMake診断</title>
@@ -41,12 +48,12 @@
     <div class="info">
       <h3 id="infoTitle">パーソナルカラーとは？</h3>
       <div id="infoSummary">
-      <p id="infoP">肌や髪・瞳などの一人ひとりが生まれ持った色と雰囲気が調和した「あなたに似合う色」のことです。</p>
+        <p id="infoP">肌や髪・瞳などの一人ひとりが生まれ持った色と雰囲気が調和した「あなたに似合う色」のことです。</p>
         <p id="infoP">パーソナルカラーは、イエローベースの春と秋、ブルーベースの夏と冬の4つに分類されます。</p>
         <img src="/images/color.png" alt="パーソナルカラーの説明" class="colorImg">
         <p id="infoP">パーソナルカラー診断では、マゼンタやローズピンクのように同じピンクでも「どんなピンクが似合うのか」を教えてくれます。</p>
         <p id="infoP">パーソナルカラーを身につけることで、顔色がよく見えたり、あか抜けて見えるなどの嬉しい効果がたくさんあり、あなたの魅力を自然に引き立てることができます。</p>
-        </div>
+      </div>
       <h3 id="infoTitle">Personal make-upとは？</h3>
       <div id="infoSummary">
         <p id="infoP">画像を入力するだけで簡単にパーソナルカラーと顔の輪郭を診断することができます。この2つの診断結果からあなたに似合うメイクや髪型を提案します。</p>
